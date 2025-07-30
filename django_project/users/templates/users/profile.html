@@ -1,5 +1,15 @@
 {% extends "blog/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-    <h1>{{ user.username }}</h1>
+    <div class="content-section">
+        <div class="d-flex align-items-center">
+            <img class="rounded-circle account-img me-3" src="{{ user.profile.image.url }}" alt="Profile Image">
+            <div>
+                <h2 class="account-heading mb-0">{{ user.username }}</h2>
+                <p class="text-secondary">{{ user.email }}</p>
+            </div>
+        </div>
+        <!-- FORM HERE -->
+
+    </div>
 {% endblock %}
