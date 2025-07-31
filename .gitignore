@@ -11,3 +11,6 @@ wheels/
 
 # database
 *.sqlite3
+
+# profile pictures
+django_project/media/profile_pics/
